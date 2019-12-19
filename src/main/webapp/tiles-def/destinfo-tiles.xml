@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<definition name="destination" extends="destinfo">
+		<put-attribute name="body" value="/views/dest-info.jsp"/>
+	</definition>
+
+	<definition name="basicinfo" extends="destinfo">
+		<put-attribute name="body" value="/views/basicinfo.jsp"/>
+	</definition>
+	
+	<definition name="introinfo" extends="destinfo">
+		<put-attribute name="body" value="/views/introinfo.jsp"/>
+	</definition>
+	
+	<definition name="detailinfo" extends="destinfo">
+		<put-attribute name="body" value="/views/detailinfo.jsp"/>
+	</definition>
+	
+	<definition name="imageinfo" extends="destinfo">
+		<put-attribute name="body" value="/views/imageinfo.jsp"/>
+	</definition>
+	
+	
+	<definition name="introinfo-tourist_attraction" extends="destinfo">
+		<put-attribute name="body" value="/views/introinfo/introinfo-tourist_attraction.jsp"/>
+	</definition>
+	<definition name="introinfo-cultural_facilities" extends="destinfo">
+		<put-attribute name="body" value="/views/introinfo/introinfo-cultural_facilities.jsp"/>
+	</definition>
+	<definition name="introinfo-event" extends="destinfo">
+		<put-attribute name="body" value="/views/introinfo/introinfo-event.jsp"/>
+	</definition>
+	<definition name="introinfo-tour_course" extends="destinfo">
+		<put-attribute name="body" value="/views/introinfo/introinfo-tour_course.jsp"/>
+	</definition>
+	<definition name="introinfo-leports" extends="destinfo">
+		<put-attribute name="body" value="/views/introinfo/introinfo-leports.jsp"/>
+	</definition>
+	<definition name="introinfo-lodge" extends="destinfo">
+		<put-attribute name="body" value="/views/introinfo/introinfo-lodge.jsp"/>
+	</definition>
+	<definition name="introinfo-shopping" extends="destinfo">
+		<put-attribute name="body" value="/views/introinfo/introinfo-shopping.jsp"/>
+	</definition>
+	<definition name="introinfo-food" extends="destinfo">
+		<put-attribute name="body" value="/views/introinfo/introinfo-food.jsp"/>
+	</definition>
+	
+	<definition name="detailinfo-common" extends="destinfo">
+		<put-attribute name="body" value="/views/detailinfo/detailinfo-common.jsp"/>
+	</definition>
+	<definition name="detailinfo-tour_course" extends="destinfo">
+		<put-attribute name="body" value="/views/detailinfo/detailinfo-tour_course.jsp"/>
+	</definition>
+	<definition name="detailinfo-lodge" extends="destinfo">
+		<put-attribute name="body" value="/views/detailinfo/detailinfo-lodge.jsp"/>
+	</definition
+	
+	>
+</tiles-definitions>

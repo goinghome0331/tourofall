@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+
+.navbar-custom{
+	background-color: #ffb400;
+}
+@media(min-width:768px) {
+	.navbar-custom{
+		background: transparent;
+	}
+	.top-nav-collapse {
+	background-color: #ffb400;
+	}
+}

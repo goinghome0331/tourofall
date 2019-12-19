@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<definition name="usersinfo" extends="users">
+		<put-attribute name="body" value="/views/users.jsp"/>
+	</definition>
+	<definition name="usersdetail" extends="users">
+		<put-attribute name="body" value="/views/users-detail.jsp"/>
+	</definition>
+	<definition name="usersreviews" extends="users">
+		<put-attribute name="body" value="/views/users-reviews.jsp"/>
+	</definition>
+	<definition name="usersquestions" extends="users">
+		<put-attribute name="body" value="/views/users-questions.jsp"/>
+	</definition>
+	<definition name="usersanswers" extends="users">
+		<put-attribute name="body" value="/views/users-answers.jsp"/>
+	</definition>
+	
+	<definition name="usersevals" extends="users">
+		<put-attribute name="body" value="/views/users-evaluations.jsp"/>
+	</definition>
+</tiles-definitions>

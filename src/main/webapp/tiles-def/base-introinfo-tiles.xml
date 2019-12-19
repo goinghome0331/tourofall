@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="dest-introinfo-tourist_attraction" extends="base">
+		<put-attribute name="body" value="introinfo-tourist_attraction"/>
+	</definition>
+	<definition name="dest-introinfo-cultural_facilities" extends="base">
+		<put-attribute name="body" value="introinfo-cultural_facilities"/>
+	</definition>
+	<definition name="dest-introinfo-event" extends="base">
+		<put-attribute name="body" value="introinfo-event"/>
+	</definition>
+	<definition name="dest-introinfo-tour_course" extends="base">
+		<put-attribute name="body" value="introinfo-tour_course"/>
+	</definition>
+	<definition name="dest-introinfo-leports" extends="base">
+		<put-attribute name="body" value="introinfo-leports"/>
+	</definition>
+	<definition name="dest-introinfo-lodge" extends="base">
+		<put-attribute name="body" value="introinfo-lodge"/>
+	</definition>
+	<definition name="dest-introinfo-shopping" extends="base">
+		<put-attribute name="body" value="introinfo-shopping"/>
+	</definition>
+	<definition name="dest-introinfo-food" extends="base">
+		<put-attribute name="body" value="introinfo-food"/>
+	</definition>
+</tiles-definitions>

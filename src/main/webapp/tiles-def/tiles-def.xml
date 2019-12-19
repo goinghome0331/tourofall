@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="base" template="/views/templates/layout.jsp">
+		<put-attribute name="title" value="Tour Of All" />
+		<put-attribute name="header" value="/views/templates/header.jsp"/>
+		<put-attribute name="footer" value="/views/templates/footer.jsp"/>
+	</definition>
+		
+	<definition name="destinfo" template="/views/templates/destinfo-layout.jsp">
+		<put-attribute name="header" value="/views/templates/destinfo-header.jsp"/>
+		<put-attribute name="footer" value="/views/templates/destinfo-footer.jsp"/>
+	</definition>
+	
+	
+	<definition name="users" template="/views/templates/users-layout.jsp">
+		<put-attribute name="header" value="/views/templates/users-header.jsp"/>
+	</definition>
+	
+</tiles-definitions>

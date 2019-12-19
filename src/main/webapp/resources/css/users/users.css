@@ -1,0 +1,325 @@
+
+.review-card {
+    height: 350px;
+    -webkit-box-shadow: 0 0 1px 0 rgba(44, 54, 67, 0.1);
+    box-shadow: 0 0 1px 0 rgba(44, 54, 67, 0.1);
+    position: relative;
+    background: #FFF;
+
+    padding: 0;
+    border-radius: 4px;
+
+}
+
+.review-card-wrapper{
+    height: 100%;
+    border-radius: 4px;
+    border: 1px solid rgb(0,0,0);
+    overflow: hidden;
+    display: block;
+    color: #3b444f;
+    zoom:1;
+}
+.review-card-wrapper:before,
+.review-card-wrapper:after{
+    content: "";
+    display: table;
+}
+
+
+
+.review-card-figure{
+    width: 192px;
+    height: 348px;
+
+
+    border-right: 1px solid rgb(0,0,0);
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background-image: url(http://www.novelupdates.com/img/noimagefound.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+
+
+.review-img{
+    float: left;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.review-card-img{
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.review-img .review-card-img{
+    min-height: 100%;
+    max-height: 100%;
+}
+
+
+.review-card-meta{
+    padding: 15px 20px;
+}
+.media-body{
+    position:relative;
+}
+.review-card-meta-overflow{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.card-body{
+    color: #3b444f;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+.review-rating {
+    width:90%;
+    border: none;
+    float: left;
+}
+.review-card-title{
+    font-family: Benton Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size:2rem;
+    line-height: 1.5;
+    
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.review-card-address{
+    font-family: Miller Daily,Georgia,Times,Times New Roman,serif;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+     margin-bottom:10px;
+}
+.review-rating-style{
+    color: #FFD700;
+    margin-bottom: 5px;
+    font-size: 1.25em;
+}
+.review-card-content{
+    margin:10px 0;
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+.review-card-date{
+    position:absolute;
+    font-size: 1.1rem;
+    right:5%;
+    bottom:5%;
+}
+.review-eval-content{
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:auto;
+    padding-right:auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: #3b444f;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.review-card-figure .review-eval-content{
+    height: 100px;
+    top: auto;
+    -webkit-transition: height 0.2s ease-out;
+    transition: height 0.2s ease-out;
+
+    border: 0;
+
+    background: #FFF;
+}
+
+.review-eval-content:before{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0, #FFF 75%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0, #FFF 75%);
+}
+
+.review-eval-content-context{
+    font-size: 0.92857rem;
+    padding: 2px 0;
+    color: #67747c;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.review-eval-content-title{
+    text-align:center;
+    font-size: 20px;
+    font-size: 1.42857rem;
+
+    color: #3b444f;
+}
+.review-eval-content-rating{
+    text-align: center;
+}
+
+
+
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.1em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+.rating > input:checked ~ label, 
+.rating:not(:checked) > label:hover, 
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } 
+
+.rating > input:checked + label:hover, 
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, 
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+/**/
+.review-rating > input { display: none; } 
+.review-rating > label:before { 
+  margin: 5px;
+  font-size: 1.1em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.review-rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.review-rating > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+.review-rating > input:checked ~ label, 
+.review-rating:not(:checked) > label:hover, 
+.review-rating:not(:checked) > label:hover ~ label { color: #FFD700;  } 
+
+.review-rating > input:checked + label:hover, 
+.review-rating > input:checked ~ label:hover,
+.review-rating > label:hover ~ input:checked ~ label, 
+.review-rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+.row-gap{
+	margin-bottom:20px;	
+}
+
+
+.answers-content {
+    padding-left:1.5rem;
+    padding-right:1.5rem;
+}
+.answers-section-wrapper{
+    margin-left:3rem;
+    margin-right:3rem;
+
+    
+    border-bottom: 1px solid gray;
+}
+.answers-section {
+    position:relative;
+    width:100%;
+    height:200px;
+    padding-top:10px;
+    padding-bottom:10px;
+
+}
+.answers-section-header{
+    margin-bottom : 20px;
+}
+.answers-section-footer{
+    position:absolute;
+    right:0;
+    bottom:10px;
+}
+
+a, a:hover a:visited {
+	text-decoration: none;
+	cursor: pointer;
+	color:black;
+}
+
+@media (min-width: 400px){
+    .review-rating {
+        width:80%;
+    }
+}
+@media (max-width: 440px){
+    .review-card-figure{
+        width:45%;
+    }
+    .review-rating > label:before { 
+        margin: 2px;
+    }
+}
+@media (min-width: 441px){
+    .review-rating{
+        width:85%;
+    }
+}
+@media (min-width: 510px) and (max-width: 619px){
+    .review-card{
+        margin-left:10%;
+        margin-right:10%;
+    }
+}
+@media (min-width: 620px) and (max-width: 767px){
+    .review-card{
+        margin-left:100px;
+        margin-right:100px;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px){
+    .review-card-figure{
+        width:170px;
+    }
+    .container{
+        margin-right: 30;
+        margin-left: 30;
+    }
+    .review-rating {
+        width:90%;
+    }
+}
+@media (min-width: 992px){
+    .review-card-figure{
+        width:210px;
+    }
+    .review-rating {
+        width:80%;
+    }
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="dest-basicinfo" extends="base">
+		<put-attribute name="body" value="basicinfo"/>
+	</definition>
+	<definition name="dest-introinfo" extends="base">
+		<put-attribute name="body" value="introinfo"/>
+	</definition>
+	<definition name="dest-detailinfo" extends="base">
+		<put-attribute name="body" value="detailinfo"/>
+	</definition>
+	<definition name="dest-imageinfo" extends="base">
+		<put-attribute name="body" value="imageinfo"/>
+	</definition>
+	
+</tiles-definitions>

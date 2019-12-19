@@ -1,0 +1,229 @@
+@CHARSET "UTF-8";
+
+.masthead-normal {
+    margin-top: -5rem;
+}
+
+.myinfo-masthead {
+    background-color: #3b444f;
+    color: #fff;
+    height: 50vh;
+    left: 0;
+    max-height: 80rem;
+    min-height: 40rem;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    z-index: 6;
+}
+
+
+.masthead-text-wrapper{
+    max-width: 129rem;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+    z-index: 10;
+}
+
+.masthead-text{
+    max-width: 129rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.masthead-title{
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: -.3rem;
+    line-height: .9;
+}
+
+.masthead-caption{
+    font-size: 1.5rem;
+    font-weight: 600;
+    -webkit-margin-after: 1em;
+}
+.masthead-caption-left, .masthead-caption-right,
+.masthead-caption-bottom, .masthead-caption-top, .masthead-caption-center{ 
+    position:absolute;
+}
+.masthead-caption-left{
+	left:10%;
+	top:70%;
+	
+}
+.masthead-caption-right{
+	right:10%;
+	top:70%;	
+}
+
+.masthead-caption-center{
+	bottom:15%;
+	margin-left:auto;
+	margin-right:auto;
+	font-size:48px;
+}
+
+.masthead-caption-bottom{
+	margin-left:auto;
+	margin-right:auto;
+	bottom:10%;
+}
+
+.masthead-straplines:not(.has-empty) {
+    height: 5.3rem;
+    -webkit-margin-before: 1.2em;   
+    
+}
+
+.masthead-straplines {
+    position: relative;
+}
+
+.masthead-strapline {
+    font-family: Miller Daily,Georgia,Times,Times New Roman,serif;
+    font-weight:600;
+    font-size: 2rem;
+    font-style: italic;
+    left: 0;
+    letter-spacing: .1rem;
+    line-height: 1;
+    opacity: 0;
+    position: absolute;
+    
+    width: 100%;
+
+    -webkit-animation-name: string-change;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 21s;
+
+    animation-name: string-change;
+    animation-iteration-count: infinite;
+    animation-duration: 21s;
+}
+
+.masthead-button{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 0;
+    border-radius: 2.2rem;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.2rem;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 600;
+    line-height: 1;
+    outline: none;
+    padding: 1.8rem 3rem 1.4rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color .4s,border .4s,background-color .4s;
+    vertical-align: middle;
+    white-space: nowrap;
+    background-color: #297cbb;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.intro-text {
+    color: #67747c;
+    font-family: Benton Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin: 0 auto 5.5rem;
+    text-align: center;
+}
+
+.image-container{
+	background: 50% no-repeat #3b444f;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 3;
+}
+
+
+.navbar-custom{
+	background-color: #ffb4ff;
+}
+@media(min-width:768px) {
+	.navbar-custom{
+		background: transparent;
+	}
+	.top-nav-collapse {
+	background-color: #ffb4ff;
+	}
+}
+
+@media(min-width:30em){
+    .masthead-text-wrapper{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    .masthead-text{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    
+
+    
+    .intro-text{
+        font-size: 2rem;
+        max-width: 86%;
+    }
+    
+}
+@media(min-width:35em){
+    .masthead-title{
+        font-size: 8rem;
+    }
+}
+@media(min-width: 45em) {
+
+    .masthead-normal {
+        margin-top: -13rem;
+    }
+
+    .masthead-text{
+        margin-top:5rem;
+    }
+    .masthead-strapline{
+        font-size: 3rem;
+    }
+    .masthead-straplines:not(.has-empty) {
+        height: 6.5rem;
+        padding-top: .7rem;
+    }
+}
+@media(min-width: 70em){
+    .masthead-title{
+        font-size: 15rem;
+    }
+}
+.masthead-text button:hover{
+    background-color:#0096ff;
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="dest-detailinfo-common" extends="base">
+		<put-attribute name="body" value="detailinfo-common"/>
+	</definition>
+	<definition name="dest-detailinfo-tour_course" extends="base">
+		<put-attribute name="body" value="detailinfo-tour_course"/>
+	</definition>
+	<definition name="dest-detailinfo-lodge" extends="base">
+		<put-attribute name="body" value="detailinfo-lodge"/>
+	</definition>
+</tiles-definitions>

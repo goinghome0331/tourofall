@@ -1,0 +1,121 @@
+@CHARSET "UTF-8";
+
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(white, 0.3);
+    text-transform: uppercase;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background:black;
+}
+.navbar-custom a {
+        color:white;
+}
+.navbar-custom .navbar-toggle {
+        padding: 4px 6px;
+        font-size: 16px;
+        color: white;
+        :focus,
+        :active {
+            outline: none;
+        }
+ }
+ .navbar-custom .navbar-brand {
+        font-weight: 700;
+        :focus {
+            outline: none;
+        }
+}
+.navbar-custom .nav li{
+	.active {
+		outline: none;
+		a {
+                
+                &:hover {
+            	color: white;
+        		}
+    	}
+	}
+}
+.navbar-custom .navbar-header a,.navbar-custom .nav li a{
+	-moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -moz-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    transition: box-shadow 1s;
+	/*
+	-webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+	transition: background .3s ease-in-out;
+	*/
+	
+	:focus,
+	:active {
+       	outline: none;
+        
+	}
+}
+.navbar-custom .navbar-header a:hover, .navbar-custom .nav li a:hover {
+		box-shadow: inset 0 -5px 0 #fff;
+		/*
+    	color: rgba(white, 0.6);
+        outline: none;
+        background-color: transparent;
+        */
+}
+
+.nav > li > a:focus , .nav > li > a:hover {
+	text-decoration: none;
+    background-color: transparent;
+}
+
+.collapse .navbar-center {
+	margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    transform: translateY(-10%);
+    z-index: 1;
+    
+    display: block;
+    font-size: 3rem;
+    width: 28rem;
+}
+
+
+.selected {
+	border-bottom: .5rem solid #fff;
+}
+
+.mobile-center{
+	margin-top: 15px;
+	margin-bottom:15px;
+    
+}
+
+@media(min-width:768px) {
+	.navbar-custom{
+        padding: 20px 0;
+        border-bottom: none;
+        letter-spacing: 1px;
+        background: transparent;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+        
+    }
+    .top-nav-collapse {
+            padding: 0;
+			background:black;
+            border-bottom: 1px solid rgba(white, 0.3);
+    }
+}

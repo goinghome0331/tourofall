@@ -1,0 +1,254 @@
+@CHARSET "UTF-8";
+
+.fix {
+	position:fixed;
+	width:60px;
+	height:60px;
+	background-color:white;
+	bottom:70px;
+	right:50px;
+	text-align:center;
+	font-size:35px;
+	border:3px solid #ccc;
+	border-radius:20px;
+	color:black;
+	z-index:10000;
+	
+}
+
+.col-sm-2 {
+	margin-top:70px;
+}
+.empty-header{
+	border-bottom: .1rem solid #fff;
+    height: 10rem;
+    perspective: 800px;
+    position: relative;	
+    background: black;
+}
+.eval-unit {
+	width: 100% !important;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:3rem;
+	margin-bottom:3rem;
+}
+
+.eval-unit-card-fixed{
+	
+    padding-top: 350px;
+}
+.eval-unit-card{
+	position: relative;
+    margin-bottom: 10px;
+    background: #FFF;
+}
+.eval-unit-card-mask, .eval-unit-card-figure{
+	overflow: hidden;
+}
+.eval-unit-card-mask, .eval-unit-card-figure, .eval-unit-card-content, .eval-unit-card-footer{
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.eval-unit-card-mask{
+	z-index:100;
+}
+.eval-unit-card-figure{
+	/*380px*/
+	z-index:auto;
+	
+	background-image: url('http://www.novelupdates.com/img/noimagefound.jpg');
+	background-repeat:no-repeat;
+	background-size: 100% 250px;
+}
+.eval-unit-card-score{
+	top: 15px;
+    left: 15px;
+    color:white;
+    height: 40px;
+    width: 60px;
+    background-position: 0 40%;
+    position: absolute;
+    z-index:102;
+    text-align:center;
+    
+    border-radius: 4px;
+    
+    background-color: rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, .2);
+	box-shadow: inset 0 0 100px rgba(0, 0, 0, .2);
+    
+}
+.eval-unit-card-figure img{
+	width:100%;
+	height:300px;	
+}
+.eval-unit-card-figure-img{
+	height: 100%;
+    min-width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.eval-unit-card-figure:after{
+	top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    background: #2c3643;
+    -webkit-transition: opacity 0.25s ease-out;
+    transition: opacity 0.25s ease-out;
+}
+.eval-unit-card-has-img .eval-unit-card-content{
+	height: 100px;
+	top: auto;
+    -webkit-transition: height 0.2s ease-out;
+    transition: height 0.2s ease-out;
+
+    border: 0;
+
+    background: #FFF;
+
+    
+}
+.eval-unit-card-has-img a:hover .eval-unit-card-content{
+	z-index:101;
+}
+.eval-unit-card-article .eval-unit-card-content{
+	border-top: 2px solid #c7e6aa;
+}
+.eval-unit-card-content{
+	padding: 15px;
+	box-sizing: border-box;
+    overflow: hidden;
+    color: #3b444f;
+}
+.eval-unit-card-content:before{
+	left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0, #FFF 75%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0, #FFF 75%);
+}
+.eval-unit-card-content-context{
+	font-size: 13px;
+    font-size: 0.92857rem;
+    padding: 2px 0;
+    color: #67747c;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.eval-unit-card-content-title{
+	text-align:center;
+	font-size: 20px;
+    font-size: 1.42857rem;
+
+    color: #3b444f;
+}
+
+
+.rating { 
+	border: none;
+	float: left;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+.rating > input:checked ~ label, 
+.rating:not(:checked) > label:hover, 
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } 
+
+.rating > input:checked + label:hover, 
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, 
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+.copy-menu-title {
+    font-size: 18px;
+    font-size: 1.45714rem;
+    font-weight: bold;
+    color: #297CBB;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+.center-container{
+		text-align:center;
+}
+
+.result-section-hide{
+	display:none;	
+}
+.result-section{
+	position: fixed;
+	left: 50%;
+	top: 10%;
+	margin-left:-200px;
+	width: 400px;
+	height: 100px;
+	z-index: 110;
+	background-color:black;
+	text-align:center;
+	color:#fff;
+	opacity: .4;
+}
+.result-section-text{
+	margin-top:35px;
+	margin-bottom:35px;
+}
+
+
+@media (max-width: 768px){
+	.empty-header{
+		height:5.1rem;
+	}
+}
+@media (min-width: 450px){
+	.eval-unit{
+		width: 40rem !important;
+	}
+}
+@media (min-width: 768px){
+	.eval-unit{
+		width: 26rem !important;
+	}
+	.eval-unit-card-figure{
+		z-index:100;
+	}
+	.eval-unit-card-figure img{
+		height:400px;
+	}
+	.eval-unit-card-has-img div:hover .eval-unit-card-content{
+		z-index:101;
+	}
+	.eval-unit-is-checked .eval-unit-card-content{
+		z-index:101;
+	}
+}
+@media (min-width: 992px){
+	.eval-unit{
+		width: 24rem !important;
+	}
+}

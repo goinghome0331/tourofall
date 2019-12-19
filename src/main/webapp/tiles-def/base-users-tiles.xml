@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="userspage" extends="base">
+		<put-attribute name="body" value="usersinfo" />
+	</definition>
+	<definition name="users-home" extends="base">
+		<put-attribute name="body" value="usershome" />
+	</definition>
+	<definition name="users-detail" extends="base">
+		<put-attribute name="body" value="usersdetail" />
+	</definition>
+	<definition name="users-reviews" extends="base">
+		<put-attribute name="body" value="usersreviews" />
+	</definition>
+	<definition name="users-questions" extends="base">
+		<put-attribute name="body" value="usersquestions" />
+	</definition>
+	<definition name="users-answers" extends="base">
+		<put-attribute name="body" value="usersanswers" />
+	</definition>
+	<definition name="users-evaluations" extends="base">
+		<put-attribute name="body" value="usersevals" />
+	</definition>
+</tiles-definitions>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="home" extends="base">
+		<put-attribute name="body" value="/views/home.jsp"/>
+	</definition>
+	
+	<definition name="dest-info" extends="base">
+		<put-attribute name="body" value="destination"/>
+	</definition>
+	
+	<definition name="recommend" extends="base">
+		<put-attribute name="body" value="/views/recommendation.jsp"/>
+	</definition>
+	
+	<definition name="evalmore" extends="base">
+		<put-attribute name="body" value="/views/evalmore.jsp"/>
+	</definition>
+	
+	<definition name="search" extends="base">
+		<put-attribute name="body" value="/views/search.jsp"/>
+	</definition>
+	
+	<definition name="review_write" extends="base">
+		<put-attribute name="body" value="/views/review_write.jsp"/>
+	</definition>
+	
+	<definition name="question_write" extends="base">
+		<put-attribute name="body" value="/views/question_write.jsp"/>
+	</definition>
+	
+	<definition name="join" extends="base">
+		<put-attribute name="body" value="/views/join.jsp"/>
+	</definition>
+	
+	<definition name="question" extends="base">
+		<put-attribute name="body" value="/views/question.jsp"/>
+	</definition>
+	
+	<definition name="signin" template="/views/signin.jsp">
+	</definition>
+	<definition name="signup" template="/views/signup.jsp">
+	</definition>
+	
+	
+	
+	
+	<definition name="duplicated_review">
+		<put-attribute name="body" value="/views/errorpage/duplicatedReview.jsp" />
+	</definition>
+</tiles-definitions>
